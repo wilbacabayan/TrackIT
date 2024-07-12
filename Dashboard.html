@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="DarkMode.js"></script>
+  
+</head>
+<body>
+  <div class="container inter-font">
+    <nav>
+      <ul>
+        <li>
+          <a href="dashboard.html" class="logo">
+            <img src="cca.jpg" alt="Logo"/>
+            <span class="logo-item">Admin</span>
+          </a>            
+        </li>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-menorah"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="history.html">
+            <i class="fas fa-database"></i>
+            <span class="nav-item">History</span>
+          </a>
+        </li>
+        <li>
+          <a href="Settings.html">
+            <i class="fas fa-cog"></i>
+            <span class="nav-item">Setting</span>
+          </a>
+        </li>
+        <li>
+          <a href="Login.php" class="logout">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="nav-item">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section class="main">
+      <div class="main-top">
+        <div class="date">
+          <h2 class="inter-font">Date</h2>
+          <div id="dateAndTime">
+            <script src="TrackIT-Js-File.js"></script>
+          </div>
+        </div>
+        <section class="attendance">
+          <div class="attendance-list">
+            <h1>Attendance List</h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Date</th>
+                  <th>Login Time</th>
+                  <th>Logout Time</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
